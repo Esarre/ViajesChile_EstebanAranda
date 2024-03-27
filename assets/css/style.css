@@ -1,0 +1,52 @@
+body{
+    font-family: "Dosis", sans-serif;
+}
+
+
+/* Navbar */
+
+.navfontadj{
+    color: #BACED6;
+}
+
+.navbar-nav a{
+    color: #BACED6;
+}
+
+.navbtnbrd{
+    border: 1px solid #BACED6;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+
+
+/* Header: ¿Quiénes somos? */
+
+.s2bkg{
+    background-color: #000000;
+    color: #BACED6;
+}
+
+
+
+/* Footer */
+.ftrbkg{
+    background-color: #35A7B1;
+    color: #BACED6
+}
+
+.ftrh2adj{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+/* esta clase me puede servir para pantallas grandes, ya que en pantallas pequeñas los íconos se salen */
+/*.ftrspanadj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/ 
