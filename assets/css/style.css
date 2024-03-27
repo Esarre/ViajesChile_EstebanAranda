@@ -1,5 +1,7 @@
 body{
     font-family: "Dosis", sans-serif;
+    background-color: #000000;
+    color: #BACED6;
 }
 
 
@@ -25,23 +27,40 @@ body{
 
 /* Header: ¿Quiénes somos? */
 
-.s2bkg{
+/*.hdrbkg{
     background-color: #000000;
     color: #BACED6;
+}*/
+
+.iconadj{
+    background-color: #0DCAF0;
+    text-align: center;
+}
+
+
+
+/* Section 2: Destacados (cards) */
+.s2crdadj{
+    background-color: #0DCAF0;
 }
 
 
 
 /* Footer */
 .ftrbkg{
-    background-color: #35A7B1;
+    background-color: #0DCAF0;
     color: #BACED6
 }
 
-.ftrh2adj{
+.ftrh3divadj{
     display: flex;
     align-items: center;
     justify-content: start;
+}
+
+.ftriconadj a{
+    text-decoration: none;
+    color: #BACED6;
 }
 
 /* esta clase me puede servir para pantallas grandes, ya que en pantallas pequeñas los íconos se salen */
