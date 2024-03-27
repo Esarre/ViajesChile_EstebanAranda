@@ -39,7 +39,7 @@ body{
     text-align: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     #hdrhide {
         display: none;
     }
@@ -50,6 +50,29 @@ body{
 /* Section 2: Destacados (cards) */
 .s2crdadj{
     background-color: #0DCAF0;
+    color: #BACED6;
+    font-weight: 600;
+}
+
+.s2btnbkg{
+    background-color: #006669;
+    color: #BACED6;
+    font-weight: 600;
+}
+
+
+@media (max-width: 576px){
+    .crdmrg576{
+        padding-bottom: 16px !important;
+    }
+}
+
+@media (max-width: 7680px){
+    .crdmrg992{
+        padding-bottom: 16px !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
 }
 
 
@@ -60,6 +83,10 @@ body{
     font-weight: 800;
     color: #BACED6;
     background-color: #0DCAF0;
+}
+
+.ftrbtngreen{
+    background-color: #17e421 !important;
 }
 
 
@@ -91,14 +118,3 @@ body{
     align-items: center;
     justify-content: end;
 }
-
-
-
-
-
-/* esta clase me puede servir para pantallas grandes, ya que en pantallas pequeñas los íconos se salen */
-/*.ftrspanadj{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/ 
