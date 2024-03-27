@@ -1,8 +1,15 @@
+/* General */
+
 body{
     font-family: "Dosis", sans-serif;
     background-color: #000000;
     color: #BACED6;
 }
+
+.boderbottom{
+    border-bottom: 1px solid #ffffff;
+}
+
 
 
 /* Navbar */
@@ -27,14 +34,15 @@ body{
 
 /* Header: ¿Quiénes somos? */
 
-/*.hdrbkg{
-    background-color: #000000;
-    color: #BACED6;
-}*/
-
 .iconadj{
     background-color: #0DCAF0;
     text-align: center;
+}
+
+@media (max-width: 576px) {
+    #hdrhide {
+        display: none;
+    }
 }
 
 
@@ -46,10 +54,30 @@ body{
 
 
 
+/* Section 3: Contacto */
+
+#btnadj{
+    font-weight: 800;
+    color: #BACED6;
+    background-color: #0DCAF0;
+}
+
+
+
 /* Footer */
 .ftrbkg{
     background-color: #0DCAF0;
     color: #BACED6
+}
+
+.ftrtextadj a{
+    text-decoration: none;
+    color: #BACED6;
+}
+
+#ftrfontadj{
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .ftrh3divadj{
@@ -58,10 +86,15 @@ body{
     justify-content: start;
 }
 
-.ftriconadj a{
-    text-decoration: none;
-    color: #BACED6;
+.ftricondivadj{
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
+
+
+
+
 
 /* esta clase me puede servir para pantallas grandes, ya que en pantallas pequeñas los íconos se salen */
 /*.ftrspanadj{

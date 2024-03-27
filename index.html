@@ -78,10 +78,10 @@
 
 
     <!--Header: ¿Quiénes somos?-->
-    <header class="hdrbkg">
+    <header id="hdrhide">
         <div class="container" id="quienes_somos">
-            <h1 class="text-center">Quiénes somos</h1>
-            <div class="row">
+            <h1 class="text-center py-4 boderbottom rounded-start">¿Quiénes somos?</h1>
+            <div class="row py-4">
                 <div class="col-md-4 col-lg-4">
                     <div class="iconadj">
                         <i class="fa-solid fa-plane"></i>
@@ -108,8 +108,8 @@
     <!--Section 2: Destacados (cards)-->
     <section">
         <div class="container">
-            <h1 class="text-center" id="destacados">Destacados</h1>
-            <div class="row">
+            <h1 class="text-center py-4 boderbottom" id="destacados">Destacados</h1>
+            <div class="row py-4 px-3">
                 <div class="card col-12 col-sm-6 col-md-6 col-lg-3 p-0 s2crdadj">
                     <img src="assets/img/card1.jpg" class="card-img-top" style="width: 100%; height: 100%;" alt="card1">
                     <div class="card-body">
@@ -141,37 +141,38 @@
 
     <!--Section 3: Contacto-->
     <section>
-        <div class="container text-center p-0" id="contacto">
-            <h1>Contacto</h1>
-            <div class="text-start">
+        <div class="container">
+            <h1 class="text-center pb-4 boderbottom rounded-end" id="contacto">Contacto</h1>
+            <div class="text-start py-4">
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">Nombre de contacto:</label>
                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe aquí tu nombre">
                 </div>
                 <div class="mb-3">
                     <label for="formGroupExampleInput2" class="form-label">Asunto:</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe aquí el asunto">
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Escribe aquí el asunto de tu mensaje">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escribe aquí tu mensaje"></textarea>
                 </div>
+                <input class="btn" type="submit" value="Enviar" id="btnadj">
             </div>
         </div>
     </section>
 
 
     <!--footer-->
-    <footer class="ftrbkg">
-        <div class="container row m-0 ms-auto ftriconadj">
+    <footer class="container-fluid ftrbkg">
+        <div class="container row m-0 py-4 mx-auto ftrtextadj" id="ftrfontadj">
             <div class="col-6 ftrh3divadj">
                 <a href="#up_page">VIAJES CHILE</a>
             </div>
-            <div class="col-6">
-                <a href="https://github.com/"><i class="fa-brands fa-square-github"></i></a>
-                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
-                <a href="https://m.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+            <div class="col-6 ftricondivadj">
+                <a href="https://github.com/" class="mx-1"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/" class="mx-1"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/" class="mx-1"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://m.facebook.com/" class="mx-1"><i class="fa-brands fa-square-facebook"></i></a>
             </div>
         </div>
     </footer>
