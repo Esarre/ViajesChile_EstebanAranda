@@ -65,11 +65,18 @@ navbar en base a lo definido en el código JavaScript */
     /* Header: ¿Quiénes somos? */
 
 /* Se define el color de fondo del contenedor de los íconos (favicons), y se ajusta
-el ícono para que quede centrado en el eje X */
+el ícono para que quede centrado en el eje X. Además, se ajusta el tamaño de los íconos*/
 .iconadj{
     background-color: #0DCAF0;
     text-align: center;
+    font-size: 25px;
 }
+
+.hdrfntadj p{
+    font-size: 18px;
+}
+
+
 
 /* Se define que, cuando el tamaño de la pantalla sea mayor a 768px, se mostrará
 el contenido (en este caso, el Header). Dicho de otra manera, este @media indica
