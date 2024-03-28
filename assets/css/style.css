@@ -1,44 +1,79 @@
-/* General */
+    /* General */
 
+/* Se ajusta el Font seleccionado para toda la página web y su color, 
+además del color del background  */
 body{
     font-family: "Dosis", sans-serif;
     background-color: #000000;
     color: #BACED6;
 }
 
+/* Se crea una clase que se utilizará para aplicar los bordes inferiores a utilizar
+en cada título de sección */
 .boderbottom{
     border-bottom: 1px solid #ffffff;
 }
 
 
 
-/* Navbar */
 
+
+    /* Navbar */
+
+/* Se ajusta el color y el peso del font correspondiente al texto "viajes Chile" */
 .navfontadj{
     color: #BACED6;
+    font-weight: 600;
 }
 
+/* Se ajusta el color y peso del font correspondiente a los enlaces del sándwich
+("Inicio", "¿Quiénes somos?", "Destacados" y "Contacto") */
 .navbar-nav a{
     color: #BACED6;
+    font-weight: 600;
 }
 
+/* Se define un borde para el sándwich, y su color  */
 .navbtnbrd{
     border: 1px solid #BACED6;
 }
 
+/* Se le aplica un filtro inverso al ícono del sándwich para cambiarle el color */
 .navbar-toggler-icon{
     filter: invert(1);
 }
 
 
+/* relacionado con el JS cuya función es cambiar el color del background del navbar al hacer scroll */
 
-/* Header: ¿Quiénes somos? */
+/* Se aplica un tiempo de transición entre el cambio de color del background del
+navbar (pasa de transparente a negro en 0.6 segundos) */
+.navbar {
+    transition: background-color 0.6s ease;
+}
 
+/* Se define la clase scrolled, cuya función será el de aplicar el color negro al
+navbar en base a lo definido en el código JavaScript */
+.navbar.scrolled {
+    background-color: #000000 !important;
+}
+
+
+
+
+
+    /* Header: ¿Quiénes somos? */
+
+/* Se define el color de fondo del contenedor de los íconos (favicons), y se ajusta
+el ícono para que quede centrado en el eje X */
 .iconadj{
     background-color: #0DCAF0;
     text-align: center;
 }
 
+/* Se define que, cuando el tamaño de la pantalla sea mayor a 768px, se mostrará
+el contenido (en este caso, el Header). Dicho de otra manera, este @media indica
+que el contenido no se mostrará mientras el tamaño de pantalla sea menor a 768px */
 @media (max-width: 768px) {
     #hdrhide {
         display: none;
@@ -47,26 +82,37 @@ body{
 
 
 
-/* Section 2: Destacados (cards) */
+
+
+    /* Section 2: Destacados (cards) */
+
+/* Se define el color de fondo, el color del texto y el peso del Font de las 
+tarjetas */
 .s2crdadj{
     background-color: #0DCAF0;
     color: #BACED6;
     font-weight: 600;
 }
 
+/* Se define el color de fondo, el color del texto y el peso del Font de los 
+botones */
 .s2btnbkg{
     background-color: #006669;
     color: #BACED6;
     font-weight: 600;
 }
 
-
+/* Este media query define que, cuando la pantalla sea menor a 576px, se agregará 
+un padding inferior de 16px */
 @media (max-width: 576px){
     .crdmrg576{
         padding-bottom: 16px !important;
     }
 }
 
+/* este media query define que, mientras la pantalla tenga un tamaño menor a 7680px,
+se agregarán los rellenos que se indican (padding inferior, a la izquierda y a la
+derecha) */
 @media (max-width: 7680px){
     .crdmrg992{
         padding-bottom: 16px !important;
@@ -77,44 +123,97 @@ body{
 
 
 
-/* Section 3: Contacto */
 
+
+    /* Section 3: Contacto */
+
+/* Este id define el color de fondo del botón, y el color y peso del Font del 
+mismo */
 #btnadj{
     font-weight: 800;
     color: #BACED6;
     background-color: #0DCAF0;
 }
 
+/* Esta clase está relacionada con el código jQuery, el cual controla que cuando el
+usuario haga click en el botón, éste cambie su color de fondo a verde */
 .ftrbtngreen{
     background-color: #17e421 !important;
 }
 
 
 
-/* Footer */
+
+
+    /* Footer */
+
+    /* Se define el color de fondo del footer */
 .ftrbkg{
     background-color: #0DCAF0;
     color: #BACED6
 }
 
+/* Se le quita las decoraciones a los favicon utilizados, y además se le asigna el
+color */
 .ftrtextadj a{
     text-decoration: none;
     color: #BACED6;
 }
 
+/* Se ajusta el tamaño y el peso del Font (tanto el texto en sí como de los 
+favicons) */
 #ftrfontadj{
     font-size: 25px;
     font-weight: 600;
 }
 
-.ftrh3divadj{
+/* este media query define que, en pantallas con tamaño menor a 370px el tamaño de
+los Fonts sea de 20px */
+@media (max-width: 370px){
+    .ftrfontadj{
+        font-size: 20px !important;
+    }
+}
+
+/* Ajusta el contenido para que quede centrado y justificado a la izquierda
+(texto "VIAJES CHILE") */
+.ftrfntdivadj{
     display: flex;
     align-items: center;
     justify-content: start;
 }
 
+/* Se ajusta el contenido para que quede centrado y justificado a la derecha 
+(links a redes sociales) */
 .ftricondivadj{
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+/* El siguiente media query le agrega padding a la izquierda y a la derecha al
+contenido del footer cuando el tamaño de pantalla sea mayor a 687px */
+@media (min-width: 687px){
+    .ftrmrgadj{
+        padding-left: 170px !important;
+        padding-right: 170px !important;
+    }
+}
+
+/* Este media query realiza agrega, al igual que el anterior, padding a la izquierda
+y a la derecha, pero cuando el tamaño de la pantalla sea mayor a 992px */
+@media (min-width: 992px){
+    .ftrmrgadj{
+        padding-left: 300px !important;
+        padding-right: 300px !important;
+    }
+}
+
+/* Este media query realiza lo mismo que los anteriores, pero se utiliza para
+realizar ajustes cuando el tamaño de la pantalla sea mayor a 1440px */
+@media (min-width: 1440px){
+    .ftrmrgadj{
+        padding-left: 500px !important;
+        padding-right: 500px !important;
+    }
 }
